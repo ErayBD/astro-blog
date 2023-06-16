@@ -1,0 +1,142 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("images/background.jpg"); background-size: 15%; max-height: 1vh;
+}
+
+.left-menu {
+    /*
+    background-color: green;
+    width: 15%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    */
+
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    border: 0.1vh solid white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    
+}
+
+.left-menu a {
+    display: block;
+    padding: 19.5%;
+    font-size: 1.2vw;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    color: blanchedalmond;
+}
+
+.left-menu a.active {
+    background-color: cadetblue;
+    color: white;
+}
+
+.left-menu a:hover:not(.active) {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.content {
+    overflow: hidden;
+    margin-left: 10%;
+    font-size: 1em;
+    color: azure;
+}
+
+#home_p {
+    padding: 5%;
+    padding-bottom: 0;
+    font-size: 0.9vw;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color: azure;
+}
+
+#default_p {
+    padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 0;
+    font-size: 0.9vw;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color: azure;
+    margin-left: 25%;
+    margin-top: 6%;
+}
+
+#d_p {
+    font-size: 0.9vw;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color: azure;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.default_button {
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black; 
+    border: 2px solid #008CBA;
+    margin-left: 14%;
+    margin-top: 5%;
+}
+
+.default_button:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1% 5% 1% 5%;
+    transition: 0.3s;
+    font-size: 1vw;
+  }
+
+  .tab button:hover {
+    background-color: cadetblue;
+    color: white;
+  }
+  
+  .tab button.active {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Astrophotography</title>
+</head>
+<body>
+    <div class="left-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="equipments.html" class="active">Equipments</a>
+        <a href="softwares.html">Softwares</a>
+        
+        
+        <a href="contact.html">Contact</a>
+        <img src="images/top.jpg" style="width: 100%; bottom: 0px; position: absolute; border-top: 0.1vh solid white;" alt="">
+    </div>
+
+    <div class="content" style="width: 80%; height: auto; margin-left: 15%; margin-bottom: 3%;">
+        <p id="d_p" style="margin-top: 1%; text-align: center; border: 0.1vh solid white; padding: 2%;">
+            You can click on the buttons to learn about the equipments I use myself!
+        </p>
+
+        <button onclick="cameraFunction()" id="camerabtn" class="default_button" style="width: 15%;">Camera</button>
+        <button onclick="lensFunction()" id="lensbtn" class="default_button" style="width: 15%;">Lens</button>
+        <button onclick="tripodFunction()" id="tripodbtn" class="default_button" style="width: 15%;">Tripod</button>
+        <br>
+ 
+        
+    </div>
+
+    <div id="camera" class="content" style="width: 80%; height: 500px; margin-left: 15%; position: absolute; margin-top: 2%; display: none;">
+        <img src="images/5dmarkii.png" style="width: 20%; position: absolute; margin-top: 3%;" alt="">
+        <p id="d_p" style="margin-left: 25%;">
+            <b>Canon 5D Mark II</b><br><br>
+            I must say that this camera is truly exceptional. The image quality it produces is stunning, with sharpness, clarity, and dynamic range that never cease to impress me. The full-frame sensor allows for excellent low-light performance, and the high ISO capabilities are truly remarkable.
+            One of the features that I absolutely love about the 5D Mark II is its video recording capabilities. Being one of the first DSLRs to offer full HD video recording, it opened up a whole new world of creative possibilities for me. The video quality is outstanding, and the ability to use different lenses to achieve different looks adds to the versatility of this camera.
+            The build quality of the 5D Mark II is also top-notch, with a durable body that feels solid in my hands. The controls are well-placed and intuitive, making it easy to navigate through the camera's settings and menus. The battery life is decent, allowing me to shoot for extended periods of time without constantly worrying about running out of power.
+            Furthermore, the 5D Mark II has a wide range of compatible lenses, which gives me the flexibility to choose the perfect lens for any type of photography I want to pursue. The autofocus is fast and accurate, helping me capture those decisive moments with ease. Overall, the Canon 5D Mark II has been a reliable and capable tool in my photographic journey. Its exceptional image quality, video recording capabilities, sturdy build, and versatility make it a camera that I truly appreciate and enjoy using. It has definitely earned its place as one of my all-time favorites, and I highly recommend it to any serious photographer or videographer.
+        </p>
+    </div>
+
+    <div id="lens" class="content" style="width: 80%; height: 550px; margin-left: 15%; position: absolute; margin-top: 2%; display: none;">
+        <img src="images/lens.png" style="width: 20%; position: absolute;" alt="">
+        <p id="d_p" style="margin-left: 25%;">
+            <b>Canon EF 24-105mm f/4L IS II USM</b><br><br>
+            The focal range of 24-105mm is incredibly versatile, allowing me to capture a wide variety of subjects, from landscapes to portraits, with ease.
+            One of the standout features of this lens is its ultrasonic motor (USM) autofocus system, which is fast, accurate, and virtually silent. It allows me to quickly lock focus on my subjects, even in challenging lighting conditions, and ensures that my shots are consistently sharp.
+            The build quality of the Canon 24-105 USM II is also top-notch, with a durable and sturdy construction that feels reliable in my hands. The lens is weather-sealed, which provides an extra layer of protection when shooting in adverse weather conditions, making it a reliable companion for outdoor photography.
+            In terms of usability, the lens features a zoom ring that has a smooth and precise feel, allowing me to easily zoom in and out to compose my shots. The image stabilization is also a valuable addition, helping me capture blur-free images, especially when shooting handheld at longer focal lengths.
+            Overall, the Canon 24-105 USM II has become my go-to lens for various photography genres, and I highly recommend it to anyone who wants a versatile, high-quality lens for their Canon camera. Its performance, durability, and ease of use make it a fantastic choice for both amateur and professional photographers alike.
+        </p>
+    </div>
+
+    <div id="tripod" class="content" style="width: 80%; height: 700px; margin-left: 15%; position: absolute; margin-top: 2%; display: none;">
+        <img src="images/tripod.png" style="width: 18%; position: absolute; margin-left: 3%;" alt="">
+        <p id="d_p" style="margin-left: 25%;">
+            <b>Manfrotto Befree Advanced</b><br><br>
+            First and foremost, the portability of the Befree Advanced tripod is outstanding. It is incredibly compact and lightweight, making it a breeze to carry around on my photography expeditions. The included padded carrying bag makes transportation even more convenient, allowing me to easily take it with me wherever I go.
+            Despite its compact size, the Befree Advanced tripod does not compromise on stability. It features sturdy aluminum construction and a reliable ball head that provides smooth and precise movements. The tripod legs have multiple angle options, including a unique 90-degree column mechanism, which allows for versatile shooting positions, including low-angle and macro photography.
+            The quick-release plate system on the Befree Advanced tripod is also a major convenience. It is easy to use and securely holds my camera in place, allowing for quick setup and adjustments. The bubble level and ergonomic knobs make leveling and locking my camera effortless, ensuring that my shots are perfectly aligned.
+            Furthermore, the Befree Advanced tripod has proven to be highly durable, capable of withstanding various weather conditions and rugged terrains. This gives me peace of mind knowing that my gear is stable and secure even in challenging shooting environments.
+            Overall, the Manfrotto Befree Advanced tripod is a reliable, portable, and versatile piece of equipment that has greatly contributed to the quality of my photography. I highly recommend it to any photographer who values stability, portability, and ease of use in their tripod.
+        </p>
+    </div>
+
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Astrophotography</title>
+</head>
+<body>
+    <div class="left-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="equipments.html">Equipments</a>
+        <a href="softwares.html">Softwares</a>
+        
+        
+        <a href="contact.html" class="active">Contact</a>
+        <img src="images/top.jpg" style="width: 100%; bottom: 0px; position: absolute; border-top: 0.1vh solid white;" alt="">
+    </div>
+
+    <div class="content" ng-app="mimic" ng-controller="controller" style="text-align:center; font-size: 1vw;">
+
+            <form style="margin-top: 15%; color: aliceblue;" onsubmit="return false">
+                <input style="font-size: 0.8vw;" type="text" placeholder="Enter your first name" id="firstName" ng-model="first_Name"><br><br>
+                <input style="font-size: 0.8vw;" type="text" placeholder="Enter your last name" id="lastName" ng-model="last_Name"><br><br>
+                <input style="font-size: 0.8vw;" type="text" placeholder="Enter your email" id="email" ng-model="e_mail"><br><br>
+                <input type="radio" id="male" name="gender"> Male
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" id="female" name="gender"> Female<br><br><br>
+                <span>What is your question?</span><br><br>
+                <textarea type="text" ng-model="m_essage" style="font-size: 0.8vw;" id="question" rows="6" cols="50"></textarea><br><br>
+                <button class="default_button" style="padding: 1% 2% 1% 2%; border-radius: 25%; margin: 0;" onclick="sendContact()">Submit</button>
+            </form>
+        
+    </div>
+
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+    var app = angular.module('mimic', []);
+    app.controller('controller', function() {
+
+    });
+</script>
+
+</body>
+</html>
